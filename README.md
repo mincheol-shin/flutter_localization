@@ -149,3 +149,45 @@ class LanguageButton extends StatelessWidget {
   }
 }
 ```
+
+<br>
+
+### ✔️ locale 변경
+
+```dart
+await context.setLocale(locale);
+```
+
+<br>
+
+### ✔️ 번역 (`tr()`)
+
+- ../en.json
+```json
+{
+  "appBar" : "Localization Example"
+}
+
+```
+
+- ../ko.json
+
+```json
+{
+  "appBar" : "Localization 예제"
+}
+```
+
+```dart
+// en : Localization Example
+// ko : Localization 예제
+const Text('appBar').tr(),
+```
+
+<br>
+
+### ✔️ 앱 재시작
+
+```dart
+Phoenix.rebirth(context);
+```
