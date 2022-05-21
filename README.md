@@ -2,7 +2,7 @@
 
 ### ✔️ 패키지 추가 & 디렉토리 선언 (`pubspec.yaml`)
 
-```
+```yaml
 dependencies:
   easy_localization: ^3.0.0 # 현지화
   flutter_phoenix: ^1.0.0  # 앱 재시작
@@ -28,12 +28,14 @@ assets
     - locale : 언어 코드 + 국가 코드
         - ex) 디바이스의 언어는 영어, 지역은 대한민국일경우 → en_KR
             - 번역 파일을 ko_KR로 추가할경우 언어 코드가 맞지 않으므로 기본값으로 설정됨
+
 <br>
+
 ### ✔️ iOS
 
 - `ios/Runner/Info.plist` 파일에 지원되는 locale 정보 추가
 
-```
+```swift
 <key>CFBundleLocalizations</key>
 <array>
    <string>en</string>
